@@ -7,8 +7,21 @@ export default class Precarga extends Phaser.Scene {
   }
 
   preload() { 
-    this.load.tilemapTiledJSON('nivel1', './public/tilemaps/nivel1.json');
+    this.load.image("menuFondo", "./public/images/main_menu_background.png");
+    this.load.image("logoPhaser", "./public/images/phaser_logo.png");
+    this.load.image("plataforma1", "./public/images/tilepasto.png");
+    this.load.image("Fondo", "./public/images/Background.png");
+    this.load.spritesheet("personaje", "./public/images/Player.png", {
+      frameWidth: 32,
+      frameHeight: 32,
+    });
 
+    //this.load.image("salida", "./public/images/salida.png");
+    this.load.tilemapTiledJSON("map", './public/tilemaps/nivel1.json');
+    this.load.image("Pasto", "./public/images/tilepasto.png");
+    this.load.image("Background", "./public/images/Background.png");
+
+    this.load.image("Oil", "./public/images/petroleo.png");
   }
     
   create() {

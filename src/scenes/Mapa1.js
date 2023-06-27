@@ -1,28 +1,28 @@
 export default class Juego extends Phaser.Scene {
   constructor() {
-    super("Juego");
+    super("Juego1");
   }
 
   init(data) {
     
   }                                                 
 
-  preload() {
-    // load assets
-    //this.load.tilemapTiledJSON("Mapa1", "./public/tilemaps/Mapa1.json");
-    this.load.image("fondo", "./public/images/Background.png");
-    this.load.image("tilesPlataformas", "./public/images/tileset_pasto.png");
-    this.load.image("tilepasto", "./public/images/tile_pasto.png")
-    this.load.image("tiletierra","./public/images/tiletierra.png")
-    this.load.image("Oil ball", "./public/images/petroleo.png");
-    this.load.image("mainmenu", "./public/images/main_menu_background.png")
-    this.load.spritesheet("personaje", "./public/images/Player.png", {
-      frameWidth: 32,
-      frameHeight: 32,
-    });
+  // preload() {
+  //   // load assets
+  //   //this.load.tilemapTiledJSON("Mapa1", "./public/tilemaps/Mapa1.json");
+  //   this.load.image("fondo", "./public/images/Background.png");
+  //   this.load.image("tilesPlataformas", "./public/images/tileset_pasto.png");
+  //   this.load.image("tilepasto", "./public/images/tile_pasto.png")
+  //   this.load.image("tiletierra","./public/images/tiletierra.png")
+  //   this.load.image("Oil ball", "./public/images/petroleo.png");
+  //   this.load.image("mainmenu", "./public/images/main_menu_background.png")
+  //   this.load.spritesheet("personaje", "./public/images/Player.png", {
+  //     frameWidth: 32,
+  //     frameHeight: 32,
+  //   });
 
-    this.load.image("salida", "./public/images/salida.png");
-  }
+  //   this.load.image("salida", "./public/images/salida.png");
+  // }
 
   create() {
     var platforms;
