@@ -7,11 +7,6 @@ export default class Menu extends Phaser.Scene {
     super("menu");
   }
 
-  preload() {
-    this.load.image("menuFondo", "./public/images/main_menu_background.png");
-    this.load.image("logoPhaser", "./public/images/phaser_logo.png");
-  }
-
   create() {
     this.add.image(400, 300, "menuFondo").setScale(1.1);
     this.add.image(400, 200, "logoPhaser")
@@ -44,7 +39,7 @@ export default class Menu extends Phaser.Scene {
     });
 
     button.on("pointerup", () => {
-      this.scene.start("juego");
+      this.scene.start("Juego");
     });
   }
 }

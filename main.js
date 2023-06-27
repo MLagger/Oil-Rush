@@ -2,6 +2,7 @@
 
 
 import Juego from "./src/scenes/Juego.js";
+import Menu from "./src/scenes/Menu.js";
 import Precarga from "./src/scenes/Precarga.js"
 
 
@@ -30,7 +31,7 @@ const config = {
     },
   },
   
-  scene: [Juego,Precarga],
+  scene: [Precarga, Menu, Juego,],
 
   
 };
